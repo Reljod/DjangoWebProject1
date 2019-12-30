@@ -1,3 +1,5 @@
+{% extends "MyApp1/layout.html" %}
+
 <html>
 <head>
     <title>{{ title }}</title>
@@ -6,7 +8,8 @@
 </head>
 
 <body>
-    <div><a href="about">About</a></div>
+    {% block content %}
     <span class="message">{{ message }}</span>{{ content }}
+    {% endblock %}
 </body>
 </html>

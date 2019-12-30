@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿{% extends "MyApp1/layout.html" %}
+<!DOCTYPE html>
 
 <html>
     <head>
@@ -7,8 +8,9 @@
         <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
     </head>
     <body>
-        <div><a href="home">Home</a></div>
+        {% block content %}
         {{ content }}
+        {% endblock %}
     </body>
 </html>
 </html>

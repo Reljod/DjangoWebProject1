@@ -9,7 +9,8 @@ def index(request):
         request,
         "MyApp1/index.html",
         {
-            "content": "<strong>Hello Django!</strong> on"
-            + now.strftime("%A, %d %B, %Y at %X")
+            "title": "Hello Django",
+            "message": "Reljod T. Oreta is learning Django!",
+            "content": "on " + now.strftime("%A, %d %B, %Y at %X")
         }
     )

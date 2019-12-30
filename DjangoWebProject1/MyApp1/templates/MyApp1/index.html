@@ -1,11 +1,11 @@
 <html>
 <head>
     <title>{{ title }}</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'site.css' %}" />
 </head>
 
 <body>
-
-<h1><strong>{{ message }}</strong></h1><br />{{ content }}
-
+    <span class="message">{{ message }}</span>{{ content }}
 </body>
 </html>

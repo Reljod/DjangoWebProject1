@@ -11,6 +11,6 @@ def index(request):
         {
             "title": "Hello Django",
             "message": "Reljod T. Oreta is learning Django!",
-            "content": "on " + now.strftime("%A, %d %B, %Y at %X")
+            "content": " on " + now.strftime("%A, %d %B, %Y at %X")
         }
     )
